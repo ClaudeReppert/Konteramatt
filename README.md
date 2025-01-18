@@ -22,7 +22,7 @@ The goal of this project is to develop a multiplayer, web-based adaptation of th
 
 ### 1. **GIT**
 
-- 
+- I use and understand git for updating the code
 
 ### 2. **UML** ✅
 
@@ -55,15 +55,29 @@ The project includes three UML diagrams. I used https://online.visual-paradigm.c
 - 
 ### 8. **REFACTORING**
 - 
-### 9. **BUILD**
-- 
+### 9. **BUILD** ✅
+- My project is built with Maven. The generated .war files are utilized by Apache Tomcat connected to the MySQL database
+
+![Proof](https://i.imgur.com/PlDncku.png)
+  
 ### 10. **CONTINUOUS DELIVERY**
 - 
 ### 11. **UNIT TESTS**
 - 
 ### 12. **IDE**
-- 
+**IntelliJ Idea Community Edition** ✅
+#### Favorite Shortcuts:
+
+- **`Double Shift`**: Search everywhere
+
+- **`Ctrl + Space`**: Code Completion
+
+- **`Ctrl + Alt + Shift + T`**: Refactor
+
 ### 13. **AI CODING**
-- 
+**Github Copilot Plugin**
+
+The installation was pretty straightforward. I went into the Intellij Plugin section, installed Copilot and logged in with my Github Account. After, I registered for the free trial. The ability to use AI directly inside my IDE was a gamechanger. Before, I always used ChatGPT inside the browser but now I use Copilot exclusively after adding it to my stack.
+
 ### 14. **FUNCTIONAL PROGRAMMING**
 - 
