@@ -11,13 +11,7 @@ December 1st 2024:
 12) I use IntelliJ for code development. My favorite shortcuts are "2xShift -> Search Everywhere","Ctrl+Space -> Code Completion" and "Ctrl + Alt + Shift + T -> Refactor". I'm also playing around with neovim and I might switch in the future.
 15) I set up ChatGPT inside IntelliJ but I might switch to a different one later.
 
-TASKS
-22 Oct: Name, little Coding Project (little description) and a link to your public GitHub [5 Points]
-01st Dec: First Deliverable of everything with good content via Email (see edlich.de) [15 Points]
-20th Jan: Final GitHub with all Tasks!!
-A) Write a small pet project to get into coding again. The code in GitHub can be relatively simple (e.g., a game with console output). The doc can be short! (in contrast to the one below)
-B) Make sure each person has applied the following topics on the code which have been taught in the lecture:
-1) Use and understand GIT, and be able to apply the basic commands. Can you experiment with time travelling or branches/merges? E.g. add some screenshots, add a paragraph text or show by reference/link into the commits, that you applied all the commands.
+1) GIT #experiment with time travelling, branches/merges / add some screenshots, add a paragraph text or show by reference/link into the commits
 2) UML: at least 3 big different diagrams. "big" means you can pump it up artificially as written in DDD. You have 10 million $ from me! Please export the pics. I can not install all the tools to view them! For example, these diagrams are a good idea: Use-Case, Component D, Class D, and Activity Diagram.
 3) REQUIREMENTS: Create 5-10 good requirements for your project. Then put them into a simple tool (like Airtable, Notion or Trello) and a professional tool (like Monday, Jira, Doors, ObjectIF, Xebrio, etc.) Instead of the professional version, you can also build a tool yourself; e.g. with AI! If you have used AI / LLMs here, briefly describe where and how! However, it is more important here that some / many attributes are used!
 4) ANALYSIS: A) Think about your checklist (on an extra A4 page) from all the points of the ‘ANA - Analysis’ learning unit, with the points that you consider relevant for your project (e.g. 10-15 instead of 30 on the overall picture) B) Carry out an analysis of your semester project / your favourite project. Or have a start-up idea and would like to hand in the start-up analysis as part of a large documentary! There should be at least 2 pages. Take the 10-15 points from the checklist (with e.g. 1-2 paragraphs per point). Assume that you will soon have a fishing rod for the start-up chapter. If you are successful, you would receive a lot of ‘money’ in order to be allowed to design and implement it later. So get your start-up off to a successful start!The use of large language models is explicitly encouraged here! However, don't try to solve everything with one prompt and then submit 10 pages: get specific help!
