@@ -24,7 +24,7 @@ The goal of this project is to develop a multiplayer, web-based adaptation of th
 
 - 
 
-### 2. **UML Diagrams**
+### 2. **UML** ✅
 
 The project includes three UML diagrams. I used https://online.visual-paradigm.com for the creation
 
@@ -44,8 +44,9 @@ The project includes three UML diagrams. I used https://online.visual-paradigm.c
 
 ### 3. **REQUIREMENTS**
 - 
-### 4. **ANALYSIS**
-- 
+### 4. **ANALYSIS** ✅
+- Initial Brainstorming without the use of AI can be found [here](https://github.com/ClaudeReppert/Konteramatt/blob/main/Analysis%20(no%20AI).pdf)
+- Final version refined with AI can be found [here](https://github.com/ClaudeReppert/Konteramatt/blob/main/Analysis%20(AI).pdf)
 ### 5. **DDD**
 - 
 ### 6. **METRICS**
