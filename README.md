@@ -22,7 +22,7 @@ The goal of this project is to develop a multiplayer, web-based adaptation of th
 
 ### 1. **GIT**
 
-- I use and understand git for updating the code
+I use and understand git for updating the code
 
 ### 2. **UML** ✅
 
@@ -45,8 +45,9 @@ The project includes three UML diagrams. I used https://online.visual-paradigm.c
 ### 3. **REQUIREMENTS**
 - 
 ### 4. **ANALYSIS** ✅
-- Initial Brainstorming without the use of AI can be found [here](https://github.com/ClaudeReppert/Konteramatt/blob/main/Analysis%20(no%20AI).pdf)
-- Final version refined with AI can be found [here](https://github.com/ClaudeReppert/Konteramatt/blob/main/Analysis%20(AI).pdf)
+Initial Brainstorming without the use of AI can be found [here](https://github.com/ClaudeReppert/Konteramatt/blob/main/Analysis%20(no%20AI).pdf)
+
+Final version refined with AI can be found [here](https://github.com/ClaudeReppert/Konteramatt/blob/main/Analysis%20(AI).pdf)
 ### 5. **DDD**
 - 
 ### 6. **METRICS**
@@ -56,7 +57,7 @@ The project includes three UML diagrams. I used https://online.visual-paradigm.c
 ### 8. **REFACTORING**
 - 
 ### 9. **BUILD** ✅
-- My project is built with Maven. The generated .war files are utilized by Apache Tomcat connected to the MySQL database
+My project is built with Maven. The generated .war files are utilized by Apache Tomcat connected to the MySQL database
 
 ![Proof](https://i.imgur.com/PlDncku.png)
   
@@ -64,8 +65,8 @@ The project includes three UML diagrams. I used https://online.visual-paradigm.c
 - 
 ### 11. **UNIT TESTS**
 - 
-### 12. **IDE**
-**IntelliJ Idea Community Edition** ✅
+### 12. **IDE** ✅
+**IntelliJ Idea Community Edition**
 #### Favorite Shortcuts:
 
 - **`Double Shift`**: Search everywhere
