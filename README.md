@@ -48,8 +48,20 @@ The project includes three UML diagrams. I used https://online.visual-paradigm.c
 Initial Brainstorming without the use of AI can be found [here](https://github.com/ClaudeReppert/Konteramatt/blob/main/Analysis%20(no%20AI).pdf)
 
 Final version refined with AI can be found [here](https://github.com/ClaudeReppert/Konteramatt/blob/main/Analysis%20(AI).pdf)
-### 5. **DDD**
-- 
+### 5. **DDD** ✅
+
+- **A) Event Storming (Arranged)**
+
+![Event Storming](https://i.imgur.com/kvTTo5U.png)
+
+- **B) Core Domain**
+
+![Core Domain](https://i.imgur.com/SG9c8nC.png)
+
+- **C) Relations/Mappings**
+
+![Event Storming](https://i.imgur.com/S3Qb498.png)
+
 ### 6. **METRICS**
 - 
 ### 7. **CLEAN CODE DEVELOPMENT**
