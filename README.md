@@ -171,7 +171,7 @@ public class CardTest {
         card.updateTrump('♠');
 
         assertTrue(card.trump, "Card should be marked as trump");
-        assertEquals(0, card.strength, "Strength should be initialized by Data.ranks"); // Update this based on your logic
+        assertEquals(0, card.strength, "Strength should be initialized by Data.ranks");
     }
 
     @Test
