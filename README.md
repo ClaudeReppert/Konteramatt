@@ -150,8 +150,56 @@ pipeline {
 
 ```
 
-### 11. **UNIT TESTS**
-- 
+### 11. **UNIT TESTS** ✅
+
+I used JUnit for a simple Unit Test. I created an additional CardTest class that checks the Card class works are expected. 
+
+- There is the "updateTrump" class that just creates a Card and marks it as a trump and verifies if the field is updated correctly
+- The "getSuitForTrump" class tests the behavior of getSuit for a trump card and it ensures that it returns * as expected from them
+- "reset" first modifies the cards state (trump, strength and playable) and resets it after
+
+```java
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class CardTest {
+
+    @Test
+    public void testUpdateTrump() {
+        Card card = new Card('♠', 'A', 11);
+
+        card.updateTrump('♠');
+
+        assertTrue(card.trump, "Card should be marked as trump");
+        assertEquals(0, card.strength, "Strength should be initialized by Data.ranks"); // Update this based on your logic
+    }
+
+    @Test
+    public void testGetSuitForTrump() {
+        Card card = new Card('♠', 'K', 4);
+        card.updateTrump('♠');
+
+        char suit = card.getSuit();
+
+        assertEquals('*', suit, "Trump cards should return '*' as their suit");
+    }
+
+    @Test
+    public void testReset() {
+        Card card = new Card('♥', '7', 0);
+        card.trump = true; // Not affected by reset
+        card.playable = false;
+        card.strength = 10;
+
+        card.reset();
+
+        assertTrue(card.trump, "Reset should not affect trump status");
+        assertEquals(0, card.strength, "Reset should set strength to 0 for non-trumps");
+        assertTrue(card.playable, "Reset should set playable to true for non-trumps");
+    }
+}
+```
+
 ### 12. **IDE** ✅
 **IntelliJ Idea Community Edition**
 #### Favorite Shortcuts:
