@@ -73,8 +73,20 @@ A)
 
 B) CCD cheat sheet can be found [here](https://github.com/ClaudeReppert/Konteramatt/blob/main/CCD%20cheat%20sheet.pdf)
 
-### 8. **REFACTORING**
-- 
+### 8. **REFACTORING** ✅
+
+Example 1)
+
+Inside the constructor of the Card class I initially used a hardcoded string for the Imagepath. However this approach has the downside of having to manually update this everywhere where its need if I would ever need to change the path to the cards images. By creating a constant for the image base path I can avoid all of this in the future.
+
+![refactor1](https://i.imgur.com/Ya21YNd.png) ![refactor2](https://i.imgur.com/NxMbiVy.png)
+
+Example 2) 
+
+To prevent runtime errors if an image path is missing or incorrect, I added a simple IllegalArgumentException to handle the error gracefully.
+
+![refactor1](https://i.imgur.com/T4iMCJ6.png) ![refactor2](https://i.imgur.com/9i5UWJL.png)
+
 ### 9. **BUILD** ✅
 My project is built with Maven. The generated .war files are utilized by Apache Tomcat connected to the MySQL database
 
