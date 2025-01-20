@@ -67,9 +67,16 @@ Final version refined with AI can be found [here](https://github.com/ClaudeReppe
 
 ### 6. **METRICS**
 - 
-### 7. **CLEAN CODE DEVELOPMENT**
+### 7. **CLEAN CODE DEVELOPMENT** ✅
 
-A)
+A) Example
+
+My move method can be considered clean code as it follows several "clean code" guidelines. 
+  - SINGLE RESPONSIBILITY it transfers a Card object from a source list to a target list
+  - REUSABILITY it is generic. it is used to move cards from player hands to the table back to the deck.
+  - STRAIGHTFORWARD LOGIC first it checks if the source contains the card, after it removes the card from the source and at the end it adds the card to the target.
+
+![example](https://i.imgur.com/aqoKCEk.png)
 
 B) CCD cheat sheet can be found [here](https://github.com/ClaudeReppert/Konteramatt/blob/main/CCD%20cheat%20sheet.pdf)
 
