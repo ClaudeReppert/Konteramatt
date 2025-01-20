@@ -1,0 +1,80 @@
+CREATE TABLE users (
+  user_id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(20) UNIQUE,
+  password_hash VARCHAR(255),
+  email VARCHAR(100) UNIQUE,
+  is_guest BOOLEAN NOT NULL DEFAULT FALSE,
+  date_joined TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE sessions (
+  session_id INT AUTO_INCREMENT PRIMARY KEY,
+  start_time DATETIME DEFAULT NULL,
+  end_time DATETIME DEFAULT NULL,
+  status ENUM('waiting', 'active', 'completed') DEFAULT 'waiting'
+);
+
+CREATE TABLE session_users (
+  session_id INT NOT NULL,
+  user_id INT NOT NULL,
+  seat_number TINYINT NOT NULL CHECK (seat_number BETWEEN 1 AND 4),
+  PRIMARY KEY (session_id, seat_number),
+  UNIQUE (session_id, user_id),
+  FOREIGN KEY (user_id) REFERENCES users(user_id),
+  FOREIGN KEY (session_id) REFERENCES sessions(session_id)
+);
+
+CREATE TABLE cards (
+    card_id INT AUTO_INCREMENT PRIMARY KEY,
+    suit ENUM('Hearts', 'Diamonds', 'Clubs', 'Spades') NOT NULL,
+    rank ENUM('9', '10', 'J', 'Q', 'K', 'A') NOT NULL,
+    points INT NOT NULL,
+    base_strength INT NOT NULL DEFAULT 0,
+    base_is_trump TINYINT(1) NOT NULL DEFAULT 0
+);
+
+CREATE TABLE session_cards (
+    session_id INT NOT NULL,
+    card_id INT NOT NULL,
+    user_id INT DEFAULT NULL,
+    location ENUM('deck', 'hand', 'table', 'won') NOT NULL,
+    strength INT NOT NULL,
+    is_trump TINYINT(1) NOT NULL DEFAULT 0,
+    is_playable TINYINT(1) NOT NULL DEFAULT 1,
+    FOREIGN KEY (session_id) REFERENCES sessions(session_id),
+    FOREIGN KEY (card_id) REFERENCES cards(card_id),
+    FOREIGN KEY (user_id) REFERENCES users(user_id)
+);
+
+INSERT INTO cards (suit, rank, points, base_strength, base_is_trump) VALUES
+('Spades', 'A', 4, 0, 0),
+('Spades', 'K', 3, 0, 0),
+('Spades', 'Q', 2, 14, 1),
+('Spades', 'J', 1, 0, 0),
+('Spades', '10', 0, 0, 0),
+('Spades', '9', 0, 0, 0),
+('Hearts', 'A', 4, 0, 0),
+('Hearts', 'K', 3, 0, 0),
+('Hearts', 'Q', 2, 13, 1),
+('Hearts', 'J', 1, 0, 0),
+('Hearts', '10', 0, 0, 0),
+('Hearts', '9', 0, 0, 0),
+('Diamonds', 'A', 4, 0, 0),
+('Diamonds', 'K', 3, 0, 0),
+('Diamonds', 'Q', 2, 12, 1),
+('Diamonds', 'J', 1, 0, 0),
+('Diamonds', '10', 0, 0, 0),
+('Diamonds', '9', 0, 0, 0),
+('Clubs', 'A', 4, 0, 0),
+('Clubs', 'K', 3, 0, 0),
+('Clubs', 'Q', 2, 0, 0),
+('Clubs', 'J', 1, 0, 0),
+('Clubs', '10', 0, 0, 0),
+('Clubs', '9', 0, 0, 0);
+
+CREATE TABLE matchmaking_queue (
+    user_id INT PRIMARY KEY,
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(user_id)
+);
+
