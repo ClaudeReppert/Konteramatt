@@ -20,9 +20,9 @@ The goal of this project is to develop a multiplayer, web-based adaptation of th
 
 ## Topics to Cover:
 
-### 1. **GIT**
+### 1. **GIT** ✅
 
-I use and understand git for updating the code
+I used Git extensively throughout the project to manage version control, ensuring all code changes were tracked and organized. It allowed me to update the code across different machines, commit progress with meaningful messages, and push updates to the main branch for seamless collaboration and synchronization.
 
 ### 2. **UML** ✅
 
