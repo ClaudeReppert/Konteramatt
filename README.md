@@ -42,8 +42,11 @@ The project includes three UML diagrams. I used https://online.visual-paradigm.c
 
 ---
 
-### 3. **REQUIREMENTS**
-- 
+### 3. **REQUIREMENTS** ✅
+
+- Trello [here](https://trello.com/b/Kjyi0f5f/konter-a-matt)
+- Jira [here](https://claudereppert98.atlassian.net/jira/software/projects/MBA/boards/1)
+
 ### 4. **ANALYSIS** ✅
 Initial Brainstorming without the use of AI can be found [here](https://github.com/ClaudeReppert/Konteramatt/blob/main/Analysis%20(no%20AI).pdf)
 
