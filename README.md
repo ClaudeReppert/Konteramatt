@@ -68,7 +68,11 @@ Final version refined with AI can be found [here](https://github.com/ClaudeReppe
 ### 6. **METRICS**
 - 
 ### 7. **CLEAN CODE DEVELOPMENT**
-- 
+
+A)
+
+B) CCD cheat sheet can be found [here](https://github.com/ClaudeReppert/Konteramatt/blob/main/CCD%20cheat%20sheet.pdf)
+
 ### 8. **REFACTORING**
 - 
 ### 9. **BUILD** ✅
