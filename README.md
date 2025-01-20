@@ -76,8 +76,57 @@ My project is built with Maven. The generated .war files are utilized by Apache 
 
 ![Proof](https://i.imgur.com/PlDncku.png)
   
-### 10. **CONTINUOUS DELIVERY**
-- 
+### 10. **CONTINUOUS DELIVERY** ✅
+
+I used Jenkins to automate packaging my files from github with maven, deploying it to Apache Tomcat and restarting the Tomcat server for fast reloading. This worked like a charm and I didn't have to package, copy the .war file and restart the server manually.
+
+```groovy
+pipeline {
+    agent any
+
+    environment {
+        WAR_FILE = "target/Kontermatt.war"
+        TOMCAT_WEBAPPS_DIR = "/opt/tomcat/webapps"
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/ClaudeReppert/Konteramatt.git'
+            }
+        }
+
+        stage('Build with Maven') {
+            steps {
+                sh 'mvn clean package'
+            }
+        }
+
+        stage('Deploy to Tomcat') {
+            steps {
+                sh "sudo cp ${WAR_FILE} ${TOMCAT_WEBAPPS_DIR}"
+            }
+        }
+
+        stage('Restart Tomcat') {
+            steps {
+                sh 'sudo systemctl restart tomcat'
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Application deployed successfully to Tomcat!'
+        }
+        failure {
+            echo 'Deployment failed. Please check the logs.'
+        }
+    }
+}
+
+```
+
 ### 11. **UNIT TESTS**
 - 
 ### 12. **IDE** ✅
