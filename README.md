@@ -65,8 +65,10 @@ Final version refined with AI can be found [here](https://github.com/ClaudeReppe
 
 ![Event Storming](https://i.imgur.com/S3Qb498.png)
 
-### 6. **METRICS**
-- 
+### 6. **METRICS** ✅
+
+I utilized IntelliJ's built-in metrics tool, Code Inspection, throughout my project to identify and address various areas for improvement. This included making certain variables final for better immutability, reducing redundancy in methods, and eliminating unused or obsolete parts of the code to enhance overall clarity and maintainability.
+
 ### 7. **CLEAN CODE DEVELOPMENT** ✅
 
 A) Example
