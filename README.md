@@ -162,13 +162,13 @@ pipeline {
 
 - **`Ctrl + Alt + Shift + T`**: Refactor
 
-### 13. **AI CODING**
+### 13. **AI CODING** ✅
 **Github Copilot Plugin**
 
-The installation was pretty straightforward. I went into the Intellij Plugin section, installed Copilot and logged in with my Github Account. After, I registered for the free trial. The ability to use AI directly inside my IDE was a gamechanger. Before, I always used ChatGPT inside the browser but now I use Copilot exclusively after adding it to my stack.
+The installation was pretty straightforward. I went into the Intellij Plugin section, installed Copilot and logged in with my Github Account. After, I registered for the free trial. The ability to use AI directly inside my IDE was a gamechanger. Before, I always used ChatGPT inside the browser but now I use Copilot exclusively after adding it to my stack. At the beginning of the project I also used ChatGPT directly inside Intellij but it felt not as intuitiv as Copilot
 
-### 14. **FUNCTIONAL PROGRAMMING**
-1) final data structures
+### 14. **FUNCTIONAL PROGRAMMING** ✅
+1) Final data structures
 
 I used final for fields that should not be reassigned ensuring immutability
 
@@ -184,7 +184,7 @@ public class Card {
     private final ImageIcon imageIcon;  // Immutable field
 
 ```
-2) side effect free functions
+2) Side effect free functions
 
 This functions does not modify external state and return the same result for the same input
 
@@ -194,7 +194,7 @@ Card card = new Card('♠', 'A', 11);
 int strength = card.calculateStrength(card.getRank(), true);
 
 ```
-3) use of higher-order functions
+3) Use of higher-order functions
 
 This function as an example allows for flexible behavior by taking a function as a parameter and making the method reusable for different actions
 
@@ -204,7 +204,7 @@ Game game = new Game();
 game.applyToCards(deck, card -> System.out.println(card.getSuit() + " " + card.getRank()));
 
 ```
-4) functions as parameters and return values
+4) Functions as parameters and return values
 
 Here I pass functions as arguments or return functions from methods
 
@@ -214,7 +214,7 @@ filterPlayableCards(player1.hand, card -> card.trump || card.playable);
 
 ```
 
-5) use closures / anonymous functions
+5) Use closures / Anonymous functions
 
 Here the inline function can access variables from their enclosing scope
 
