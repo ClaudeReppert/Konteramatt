@@ -272,7 +272,7 @@ public void calculateTotalPoints(List<Card> hand) {
     int totalPoints = hand.stream()
         .mapToInt(card -> {
             int basePoints = card.getPoints();
-            return card.trump ? basePoints + 10 : basePoints; // Closure: access card.trump
+            return card.trump ? basePoints + 10 : basePoints;
         })
         .sum();
 
